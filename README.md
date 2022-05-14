@@ -3,7 +3,7 @@
 Были скачаны и установленны дистрибутивы git for windows, vagrant, virtualbox, packer. Завел аккаунты на github.com и vagrantup.com
 
 Выполнение
-
+.
 выполнил команды для герерации ключа для ssh доступа к github
 ssh-keygen -t rsa -b 4096 -C "pavlik.marozov@gmail.com" 
 ввел имя файла и passphrase
