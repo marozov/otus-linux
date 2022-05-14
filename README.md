@@ -4,19 +4,18 @@
 
 Выполнение
 
-Запустил git-bash от имени администратора, далее последовательно выполнил команды для герерации ключа для ssh доступа к github
+выполнил команды для герерации ключа для ssh доступа к github
 ssh-keygen -t rsa -b 4096 -C "pavlik.marozov@gmail.com" 
 ввел имя файла и passphrase
 
-eval $(ssh-agent -s)
-ssh-add /c/Users/<myusername>/asm1213key
+ssh-add ~/.ssh/pub_key
 запустил ssh агент добавил в него ключ. Так же, отрыл редактором полученный файл и добавил ключ в аккаунт github.
 
 зашел по предложенной ссылке https://github.com/dmitry-lyutenko/manual_kernel_update и сделал форк репозитория. далее в git-bash
 git clone git@github.com:marozov/manual_kernel_update.git
 ввел passphrase ключа, репозиторий скачался на мой пк. Перешел в скачанную директорию
 
-cd /c/Users/<myusername>/manual_kernel_update
+cd manual_kernel_update
 запустил vagrant
 
 vagrant up
